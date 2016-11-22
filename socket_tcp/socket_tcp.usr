@@ -7,7 +7,7 @@ BuildTarget=
 ParamRightBrace=>
 ParamLeftBrace=<
 NewFunctionHeader=0
-LastActiveAction=data.ws
+LastActiveAction=Action
 CorrInfoReportDir=
 LastResultDir=
 DevelopTool=Vugen
@@ -17,7 +17,7 @@ ParameterFile=
 GlobalParameterFile=
 LastModifyVer=11.0.0.0
 [TransactionsOrder]
-Order=""
+Order="login__*delimiter*__test1"
 [ExtraFiles]
 data.ws=
 [Actions]
@@ -28,14 +28,19 @@ vuser_end=vuser_end.c
 vuser_init=0
 Action=0
 vuser_end=0
+utils.h=0
 [Replayed Actions]
 vuser_init=0
 Action=0
 vuser_end=0
+utils.h=0
 [Modified Actions]
 vuser_init=1
-Action=0
+Action=1
 vuser_end=0
+utils.h=1
+[ManuallyExtraFiles]
+utils.h=
 [ProtocolsVersion]
 WinSock=11.0.0.0
 [RunLogicFiles]
@@ -55,3 +60,8 @@ Default Profile=default.usp
 CurrentState=1
 VuserStateHistory= 0
 LastReplayStatus=0
+[Transactions]
+login=
+test1=
+[Rendezvous]
+FinishLogin=

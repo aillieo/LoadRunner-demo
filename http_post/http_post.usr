@@ -10,14 +10,14 @@ BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=globals.h
+LastActiveAction=vuser_init
 CorrInfoReportDir=
 LastResultDir=
 DevelopTool=Vugen
 ActionLogicExt=action_logic
 MajorVersion=11
 MinorVersion=0
-ParameterFile=
+ParameterFile=http_post.prm
 GlobalParameterFile=
 RunType=cci
 LastModifyVer=11.0.0.0
@@ -39,7 +39,7 @@ Action=0
 vuser_end=0
 [Modified Actions]
 vuser_init=0
-Action=0
+Action=1
 vuser_end=0
 [ProtocolsVersion]
 QTWeb=11.0.0.0
