@@ -7,7 +7,7 @@ BuildTarget=
 ParamRightBrace=>
 ParamLeftBrace=<
 NewFunctionHeader=0
-LastActiveAction=vuser_init
+LastActiveAction=Action
 CorrInfoReportDir=
 LastResultDir=
 DevelopTool=Vugen
@@ -38,7 +38,7 @@ utils.h=0
 vuser_init=1
 Action=1
 vuser_end=0
-utils.h=0
+utils.h=1
 [ManuallyExtraFiles]
 utils.h=
 [ProtocolsVersion]
