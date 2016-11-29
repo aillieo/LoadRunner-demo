@@ -12,7 +12,9 @@
 Action()
 {
 
-	    char* filename = "..\\newUsers.txt";
+		const char _server[] = "Action=http://192.168.0.200:8060/login";
+
+	    const char filename[] = "..\\tc_testing\\newUsers.dat";
 
 		int idAmount = 10;
 
@@ -42,9 +44,9 @@ Action()
 
 
 			//从获取的响应中提取数据 并存入参数
-			web_reg_save_param("uid","LB=\"uid\":\"","RB=\",\"secret",LAST);
-			web_reg_save_param("secret","LB=\"secret\":\"","RB=\",\"server",LAST);
-			web_reg_save_param("server","LB=\"server\":\"","RB=\",\"region",LAST);
+			web_reg_save_param("uid","LB=\"uid\":\"","RB=\",",LAST);
+			web_reg_save_param("secret","LB=\"secret\":\"","RB=\",",LAST);
+			web_reg_save_param("server","LB=\"server\":\"","RB=\",",LAST);
 
 
 			//web_set_max_html_param_len("262144");
@@ -56,7 +58,7 @@ Action()
 
 			//发送请求，使用POST方式，并提交参数，其中openid一项是从参数列表中读取
 			web_submit_data("post1",
-							"Action=http://192.168.2.168:8060/mix/login",
+							_server,
 							"Method=POST", 
 							"RecContentType=text/html", 
 							"Mode=HTML", 

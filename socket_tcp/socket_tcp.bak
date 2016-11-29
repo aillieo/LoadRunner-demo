@@ -13,7 +13,7 @@ LastResultDir=
 DevelopTool=Vugen
 MajorVersion=11
 MinorVersion=0
-ParameterFile=socket_tcp.prm
+ParameterFile=
 GlobalParameterFile=
 LastModifyVer=11.0.0.0
 [TransactionsOrder]
