@@ -16,6 +16,23 @@ int strToHex(char* src, char* des)
 }
 
 
+//将读取到的字节转化为loadrunner中的16进制形式string
+int dataToHex(char* src, char* des, int length )
+{
+	int i = 0 ;
+	for(i = 0; i < length ; i++ )
+	{
+		unsigned char hex[5];
+		sprintf(hex,"\\x%02X",src[i]);
+		memcpy(des + i*4 , hex,4);
+	}
+
+	return 0;
+
+
+}
+
+
 
 //自定义函数 接收可变长度的消息 具体可以根据协议调整
 //1、接收消息的前四个字节 并将接收的字节转化为十进制数
@@ -85,11 +102,10 @@ int fiFromHexBinToInt(char *szBuffer)
 
 
 
-// 随机等待min~ max 秒的时间
-float randomThinkTime(float min , float max)
+//获得随机数
+float getRandom(float min , float max)
 {
-
-	float tm = max;
+	float ret = max;
 
 	if(max < min)
 	{
@@ -100,13 +116,24 @@ float randomThinkTime(float min , float max)
 	{
 		//随机数是 0 - 99
 		float rand = (float)(atoi(lr_eval_string("<rand>")));
-		tm = min + rand/99.0 * (max - min) ;
+		ret = min + rand/99.0 * (max - min) ;
 	}
 
+	return ret;
 
-	lr_think_time(tm);
+}
 
-	return tm;
+
+
+
+//等待随即min~max秒时间
+float randomThinkTime(float min , float max)
+{
+
+	float ret = getRandom(min,max);
+	lr_think_time(ret);
+
+	return ret;
 
 }
 

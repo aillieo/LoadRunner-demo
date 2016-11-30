@@ -5,6 +5,8 @@
 Action()
 {
 
+	long file_handle = NULL;
+
 	char newUsersFile[] = ".\\newUsers.dat";
 
 	//ÐéÄâÓÃ»§µÄID
@@ -30,9 +32,10 @@ Action()
 	struct user user1;
 
 
+	int i = 0;
 
 
-	lr_start_transaction("login");
+
 
 	if ((file_handle = fopen(newUsersFile, "r")) == NULL)
 	{
@@ -79,7 +82,7 @@ Action()
 
 
 	lrs_create_socket("socket0", "TCP", "LocalHost=0", serverStr, LrsLastArg);
-	lrs_set_send_buffer("socket0", sendStr , strlen(sendStr) );
+	lrs_set_send_buffer("socket0", _buff , strlen(_buff) );
 	lrs_send("socket0", "buf0", LrsLastArg);
 	custom_lrs_receive("socket0", "buf1", LrsLastArg);
 

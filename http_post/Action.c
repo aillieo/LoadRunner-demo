@@ -14,7 +14,7 @@ Action()
 
 		const char _server[] = "Action=http://192.168.0.200:8060/login";
 
-	    const char filename[] = "..\\tc_testing\\newUsers.dat";
+	    const char filename[] = "..\\socket_tcp\\newUsers.dat";
 
 		int idAmount = 10;
 
