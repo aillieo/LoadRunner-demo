@@ -39,7 +39,7 @@ Action()
 
 	if ((file_handle = fopen(newUsersFile, "r")) == NULL)
 	{
-		lr_output_message ("Unable to create %s", newUsersFile);
+		lr_output_message ("Unable to read %s", newUsersFile);
 		return -1;
 	}
 

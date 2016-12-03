@@ -1,8 +1,8 @@
 [General]
 Type=Multi
-AdditionalTypes=QTWeb
-ActiveTypes=QTWeb
-GenerateTypes=QTWeb
+AdditionalTypes=QTWeb,WinSock
+ActiveTypes=QTWeb,WinSock
+GenerateTypes=QTWeb,WinSock
 RecordedProtocols=
 DefaultCfg=default.cfg
 AppName=
@@ -10,19 +10,19 @@ BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=Action
+LastActiveAction=data.ws
 CorrInfoReportDir=
 LastResultDir=
 DevelopTool=Vugen
 ActionLogicExt=action_logic
 MajorVersion=11
 MinorVersion=0
-ParameterFile=http_post.prm
+ParameterFile=
 GlobalParameterFile=
 RunType=cci
 LastModifyVer=11.0.0.0
 [TransactionsOrder]
-Order=""
+Order="login"
 [ExtraFiles]
 globals.h=
 [Actions]
@@ -33,16 +33,26 @@ vuser_end=vuser_end.c
 vuser_init=0
 Action=0
 vuser_end=0
+utils.h=0
+data.ws=0
 [Replayed Actions]
 vuser_init=0
 Action=0
 vuser_end=0
+utils.h=0
+data.ws=0
 [Modified Actions]
 vuser_init=0
 Action=1
 vuser_end=0
+utils.h=0
+data.ws=0
+[ManuallyExtraFiles]
+utils.h=
+data.ws=
 [ProtocolsVersion]
 QTWeb=11.0.0.0
+WinSock=11.0.0.0
 [RunLogicFiles]
 Default Profile=default.usp
 [StateManagement]
@@ -61,3 +71,5 @@ Default Profile=default.usp
 CurrentState=1
 VuserStateHistory= 0
 LastReplayStatus=0
+[Transactions]
+login=
