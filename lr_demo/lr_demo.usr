@@ -10,7 +10,7 @@ BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=data.ws
+LastActiveAction=login.h
 CorrInfoReportDir=
 LastResultDir=
 DevelopTool=Vugen
@@ -22,7 +22,7 @@ GlobalParameterFile=
 RunType=cci
 LastModifyVer=11.0.0.0
 [TransactionsOrder]
-Order="login"
+Order=""
 [ExtraFiles]
 globals.h=
 [Actions]
@@ -35,21 +35,29 @@ Action=0
 vuser_end=0
 utils.h=0
 data.ws=0
+transactions.h=0
+login.h=0
 [Replayed Actions]
 vuser_init=0
 Action=0
 vuser_end=0
 utils.h=0
 data.ws=0
+transactions.h=0
+login.h=0
 [Modified Actions]
 vuser_init=0
 Action=1
 vuser_end=0
-utils.h=1
+utils.h=0
 data.ws=0
+transactions.h=1
+login.h=1
 [ManuallyExtraFiles]
 utils.h=
 data.ws=
+transactions.h=
+login.h=
 [ProtocolsVersion]
 QTWeb=11.0.0.0
 WinSock=11.0.0.0
@@ -71,5 +79,3 @@ Default Profile=default.usp
 CurrentState=1
 VuserStateHistory= 0
 LastReplayStatus=0
-[Transactions]
-login=
