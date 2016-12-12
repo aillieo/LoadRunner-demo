@@ -17,8 +17,8 @@ Action()
 	performTransaction("t1" , "<str_t1>" , 3 );
 
 
-	random = atoi(lr_eval_string("<rand>"));
-	if(random< 33)
+	random = getRandom(0,1);
+	if(random< 0.33)
 	{
 		performTransaction("t2" , "<str_t2>" , 5 );
 	}

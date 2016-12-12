@@ -44,14 +44,14 @@ vuser_end=1
 utils.h=0
 data.ws=0
 transactions.h=0
-login.h=1
+login.h=0
 [Modified Actions]
 vuser_init=0
 Action=1
 vuser_end=0
 utils.h=0
 data.ws=0
-transactions.h=0
+transactions.h=1
 login.h=1
 [ManuallyExtraFiles]
 utils.h=

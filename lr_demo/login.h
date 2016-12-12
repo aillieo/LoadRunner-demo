@@ -44,7 +44,7 @@ int login()
 
 	lrs_set_send_buffer("socket0", sendStr , strlen(sendStr) );
 	lrs_send("socket0", "buf0", LrsLastArg);
-	auto_receive_all("socket0", "buf1", LrsLastArg);
+	custom_lrs_receive_all("socket0", "buf1", LrsLastArg);
 	//lrs_receive("socket0", "buf1", LrsLastArg);
 
 
