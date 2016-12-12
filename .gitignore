@@ -1,3 +1,9 @@
 *.bak
 *.log
 *.idx
+lr_demo/result1/*
+*.txt
+lr_demo/
+pre_cci.c
+lr_demo.ci
+combined_lr_demo.c
