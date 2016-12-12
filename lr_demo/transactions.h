@@ -42,22 +42,6 @@ int performTransaction(char* transactionName, char* str_parameter, int commandsA
 
 
 
-//等待一段时间后执行xx事务
-int performTransactionAfterWait(char* transactionName, char* str_parameter, int commandsAmount ,float waitTime)
-{
-
-	lr_think_time(waitTime);
-
-	return performTransaction(transactionName, str_parameter, commandsAmount );
-
-
-}
-
-
-
-
-
-
 
 
 

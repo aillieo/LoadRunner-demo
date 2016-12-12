@@ -31,6 +31,7 @@ int login()
 
 	//首个消息传的长度为26 short int
 	sprintf(sendStr,"\\x%02X\\x%02X",0,26);
+	// lrs_decimal_to_hex_string();
 
 
 	strcat(sendStr,_sendStr);
@@ -47,25 +48,6 @@ int login()
 	//lrs_receive("socket0", "buf1", LrsLastArg);
 
 
-
-
-
-	for (i = 0 ; i < 8 ; i++) 
-	{
-
-		autoThink();
-
-		//fscanf(file_handle,"%s\n", sendStr); 
-		//lr_output_message("%s",sendStr);
-		strcpy(sendStr,lr_eval_string("{str_login}"));  
-		//lr_output_message("%s",sendStr);
-
-		lrs_set_send_buffer("socket0", sendStr , strlen(sendStr) );
-		lrs_send("socket0", "buf0", LrsLastArg);
-		auto_receive_all("socket0", "buf1", LrsLastArg);
-		//lrs_receive("socket0", "buf1", LrsLastArg);
-
-	}
 
 
 
