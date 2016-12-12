@@ -86,7 +86,7 @@ int loginWebForUserInfo()
 
 	//发送请求，使用POST方式，并提交参数，其中openid一项是从参数列表中读取
 	web_submit_data("post1",
-					"Action=http://server:8060/login",
+					"Action=http://192.168.1.200:8060/login",
 					"Method=POST", 
 					"RecContentType=text/html", 
 					"Mode=HTML", 
