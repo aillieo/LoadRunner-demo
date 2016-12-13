@@ -176,7 +176,7 @@ float getRandom(float min , float max)
 
 
 
-int waitWithHeartBeat(float waitTime)
+int waitWithHeartBeat(double waitTime)
 {
 
 	// 心跳包数据
