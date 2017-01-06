@@ -131,7 +131,7 @@ int custom_lrs_receive_all(char *sock_desc, char *buf_desc, void *dummy)
 	//判断首条是否接收成功
 	if(i == -1)
 	{
-		lr_error_message("接收消息失败");
+		//lr_error_message("接收消息失败");
 		return -1;
 	}
 
@@ -141,6 +141,7 @@ int custom_lrs_receive_all(char *sock_desc, char *buf_desc, void *dummy)
 	{
 		i = custom_lrs_receive(sock_desc, buf_desc, dummy);
 	}
+	return 0;
 }
 
 
