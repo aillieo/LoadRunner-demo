@@ -10,7 +10,7 @@ BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=transactions.h
+LastActiveAction=utils.h
 CorrInfoReportDir=result1
 LastResultDir=result1
 DevelopTool=Vugen
@@ -51,7 +51,7 @@ Action=1
 vuser_end=0
 utils.h=1
 data.ws=0
-transactions.h=1
+transactions.h=0
 login.h=0
 [ManuallyExtraFiles]
 utils.h=
